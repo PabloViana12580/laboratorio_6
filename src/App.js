@@ -1,21 +1,30 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { connect } from 'react-redux';
+import Merchandise from './components/Merchandise';
+import ProductRegister from './components/ProductRegister';
+//Clases a importar para renderizar
 
 class App extends Component {
   render() {
+		const {total} = this.props;
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Merchandise />
+        <ProductRegister />
+      <div>
+      	<h1> total: </h1>
+      	<h2> Q {total} </h2>
+      </div>
       </div>
     );
   }
 }
 
-export default App;
+export default connect(
+	state => ({
+		total: state.carritoReducer.total,
+	}),
+	undefined,
+
+)(App);

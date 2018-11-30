@@ -1,0 +1,30 @@
+.ProductosAble {
+	display: flex;
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 1rem;
+	align-content: row;
+	align-content: center;	
+	border-style: solid;
+	border-color: green;
+
+}
+
+.ProductosDisable {
+	display: flex;
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 1rem;
+	align-content: row;
+	align-content: center;	
+	border-style: solid;
+	border-color: red;
+
+}
+
+.btnRegister {
+	height: 2rem;
+	width: 5rem;
+	margin-left: 1rem;
+	margin-top: 1rem;
+}

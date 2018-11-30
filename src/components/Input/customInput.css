@@ -1,0 +1,7 @@
+.customInput{
+  border-radius: 4px;
+  margin: 0.1rem;
+  overflow: visible;
+  padding: 0.1rem;
+  flex: 1;
+}
